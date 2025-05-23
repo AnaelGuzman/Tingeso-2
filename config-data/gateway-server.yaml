@@ -24,6 +24,6 @@ spring:
             allowedHeaders: "*"
       routes:
         - id: ms-kart
-          uri: lb://ms-kart
+          uri: lb://ms-kart:8090
           predicates:
             - Path=/karts/**
