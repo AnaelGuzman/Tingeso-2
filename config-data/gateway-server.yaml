@@ -18,6 +18,6 @@ spring:
           enabled: true
       routes:
         - id: ms-kart
-          uri: lb://ms-kart:8090
+          uri: lb://ms-kart
           predicates:
             - Path=/karts/**
