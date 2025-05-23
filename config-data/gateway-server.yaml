@@ -21,3 +21,5 @@ spring:
           uri: lb://ms-kart
           predicates:
             - Path=/karts/**
+          filters:
+            - StripPrefix=1
