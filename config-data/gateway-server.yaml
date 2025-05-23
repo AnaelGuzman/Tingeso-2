@@ -16,12 +16,6 @@ spring:
       discovery:
         locator:
           enabled: true
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedMethods: "*"
-            allowedHeaders: "*"
       routes:
         - id: ms-kart
           uri: lb://ms-kart:8090
